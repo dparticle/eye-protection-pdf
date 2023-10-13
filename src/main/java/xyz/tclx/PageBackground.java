@@ -15,7 +15,7 @@ import java.nio.file.StandardCopyOption;
 
 
 public class PageBackground {
-    static final String PATH = "/Users/chenli/Documents/syncthing/collections";  // 注意不能用 ~，File 不会认为是绝对路径
+    static final String PATH = "/Users/chenli/Documents/Workspace/research/review";  // 注意不能用 ~，File 不会认为是绝对路径
     static final String INEYE_DIR = "ineye"; // 原文件复制到 ineye 目录
 //    static final Color EYE_COLOR = new Color(0xc7edcc); // 豆沙绿
     static final Color EYE_COLOR = new Color(0xdfedd3); // readpaper 绿
@@ -80,6 +80,7 @@ public class PageBackground {
             destDoc.close();
             // 移除背景
 //            RemoveBackground.removeLowestContent(ineyeFile.toString(), file.toString());
+
             System.out.println(fileName + " done!");
         } catch (java.lang.Exception e) {
             e.printStackTrace();
